@@ -2,10 +2,43 @@
 <html>
 <head>
 	<title>Tic-Tac-Toe Game</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <body>
-	<h1>Tic-Tac-Toe Game</h1>
+	<h1 class="title text-center text-uppercase m-5 p-1">Tic-Tac-Toe Game</h1>
+	<div class="flex ">
+		<h2 class="levelTittle text-center m-2">Level:</h2>
+		<div class="d-flex justify-content-center ">
+			<button type="button" class="btn btn-outline-primary m-2">Easy</button>
+			<button type="button" class="btn btn-outline-primary m-2">Intermediate</button>
+			<button type="button" class="btn btn-outline-primary m-2">Hard</button>	
+		</div>	
+	</div>
+	<div class="">
+		<h2 class="sideTittle text-center m-2">Pick a side:</h2>
+		<div class="d-flex justify-content-center">
+			<button type="button" class="btn btn-outline-primary m-2">X</button>
+			<button type="button" class="btn btn-outline-primary m-2">O</button>
+		</div>
+	</div>
+	<div class="d-flex justify-content-center ">
+		<button  id="playButton" type="button" class="btn btn-outline-primary text-uppercase btn-lg m-3">start</button>
+	</div>
+	<div class="d-flex justify-content-center m-3">
+		<a href="https://en.wikipedia.org/wiki/Tic-tac-toe#Game_play" class="text-decoration-none text-center">Don't know how to play?</a>
+	</div>
+	<footer class="text-center">
+		Made by Eduardo Brito. 2020.
+	</footer>
+	
 	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
