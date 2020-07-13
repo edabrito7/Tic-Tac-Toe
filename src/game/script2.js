@@ -11,7 +11,10 @@ const row3_col2 = document.getElementById("row3-col2");
 const row3_col3 = document.getElementById("row3-col3");
 
 
+const button = document.querySelectorAll('div.col-4 > button');
+
 const gotoMenu = document.getElementById("gotoMenu");
+const restartButton = document.getElementById("restartButton")
 const user = document.getElementById("user");
 const computer = document.getElementById("computer");
 const color1 = '#007bff';
@@ -26,10 +29,30 @@ let i = 0;
 let j = 2;
 
 
+const initialstate = () => {
+	tic_tac = [[0, 0, 0],[0, 0, 0],[0, 0, 0]];
+	colum = [];
+	crosses_right = [];
+	crosses_left = [];
+	i = 0;
+	j =2;
+} 
+
+initialstate()
+const restart = (element) => {
+	element.value = '';
+	element.innerHTML= '';
+
+}
 
 const rule1 = (rows) => {
 	if (rows.every(row => row === rows[0] && row!= 0)) {
-		alert("You WIN!")
+		
+		$("#myModal").modal();
+		button.forEach(restart);
+		initialstate()
+		console.log(tic_tac);
+
 	}
 }
 
@@ -115,7 +138,10 @@ const router = () => {
 
 
 gotoMenu.addEventListener("click", router);
-
+restartButton.addEventListener("click", () => {
+	button.forEach(restart); 
+	initialstate();
+});
 
 
 
