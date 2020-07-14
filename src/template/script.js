@@ -3,7 +3,7 @@ const playButton = document.getElementById("playButton");
 
 const onRouteChange = () => {
 	
-	location.href = "./game/game.html";
+	location.href = "./src/game/game.html";
 	
 	
 }
