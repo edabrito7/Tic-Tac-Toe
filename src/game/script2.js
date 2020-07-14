@@ -149,7 +149,7 @@ clickXO = () => {
 }
 
 const router = () => {
-	location.href = "../template/index.html";
+	location.href = "../../index.html";
 }
 
 
