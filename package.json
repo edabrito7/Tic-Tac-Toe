@@ -1,0 +1,19 @@
+{
+  "name": "tic-tac-toe",
+  "version": "1.0.0",
+  "description": "Tic Tac Toe game using basic HMTL, CCS3, Bootstrap4 &amp; JavaScript",
+  "main": "index.html",
+  "scripts": {
+    "start": "index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edabrito7/Tic-Tac-Toe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edabrito7/Tic-Tac-Toe/issues"
+  },
+  "homepage": "https://github.com/edabrito7/Tic-Tac-Toe#readme"
+}
