@@ -1,4 +1,4 @@
-h1, h2, button, li {
+h1, h2, button,.form-control, li {
 	font-family: 'Bangers', cursive;
 
 }
@@ -7,6 +7,9 @@ h1 {
 	font-size: 6em;
 }
 
+.form-control {
+	width: 30%;
+}
 
 @media only screen and (max-width: 600px) {
 	h1 {
@@ -14,6 +17,9 @@ h1 {
 	}
 	h2 {
 		font-size: 1.5em;
+	}
+	.form-control {
+		width: 90%;
 	}
 }
 
@@ -25,5 +31,5 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 2.5rem;            /* Footer height */
+  height: 2.5rem;           
 }
