@@ -136,7 +136,7 @@ clickXO = () => {
 		tic++;
 		
 	}	 else {
-		winner.innerHTML = "YA JUGASTE ALLI";
+		winner.innerHTML = `YOU CAN'T PLAY THERE`;
 		$("#myModal").modal();
 	}
 	if (tic > 8) {
